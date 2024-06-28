@@ -1,5 +1,15 @@
 ### Project - 1: Deploying a Multi-Tier Website Using AWS EC2
 To deploy a multi-tier website using AWS EC2 with high availability and auto-scaling, follow these steps:
+**Description of Components**
+**Route 53:** AWS Route 53 is used for DNS management, directing traffic to the Application Load Balancer (ALB).
+
+**Application Load Balancer (ALB):** The ALB distributes incoming traffic across multiple EC2 instances in different Availability Zones to ensure high availability and fault tolerance.
+
+**Auto Scaling Group:** This ensures that the number of EC2 instances scales up or down based on demand. It maintains a minimum of 2 instances to ensure high availability.
+
+**EC2 Instances:** These instances host the web application (PHP). They are part of the Auto Scaling Group and receive traffic from the ALB.
+
+**RDS (MySQL):** Amazon RDS for MySQL is used to host the database. It ensures high availability, automated backups, and easy scalability.
 
 ### Step 1: Launch an EC2 Instance
 
@@ -164,14 +174,3 @@ This guide provides the steps to set up a multi-tier architecture on AWS with hi
 
 
 
-**Description of Components**
-**Route 53:** AWS Route 53 is used for DNS management, directing traffic to the Application Load Balancer (ALB).
-
-**Application Load Balancer (ALB):** The ALB distributes incoming traffic across multiple EC2 instances in different Availability Zones to ensure high availability and fault tolerance.
-
-**Auto Scaling Group:** This ensures that the number of EC2 instances scales up or down based on demand. It maintains a minimum of 2 instances to ensure high availability.
-
-**EC2 Instances:** These instances host the web application (PHP). They are part of the Auto Scaling Group and receive traffic from the ALB.
-
-**RDS (MySQL):** Amazon RDS for MySQL is used to host the database. It ensures high availability, automated backups, and easy scalability.
-   
