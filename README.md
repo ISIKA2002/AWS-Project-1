@@ -1,6 +1,6 @@
 ### Project - 1: Deploying a Multi-Tier Website Using AWS EC2
 To deploy a multi-tier website using AWS EC2 with high availability and auto-scaling, follow these steps:
-**Description of Components**
+###**Description of Components**
 **Route 53:** AWS Route 53 is used for DNS management, directing traffic to the Application Load Balancer (ALB).
 
 **Application Load Balancer (ALB):** The ALB distributes incoming traffic across multiple EC2 instances in different Availability Zones to ensure high availability and fault tolerance.
