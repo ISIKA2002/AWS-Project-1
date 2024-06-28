@@ -160,6 +160,10 @@ This guide provides the steps to set up a multi-tier architecture on AWS with hi
                             +----------------------+
 
 
+
+
+
+
 **Description of Components**
 **Route 53:** AWS Route 53 is used for DNS management, directing traffic to the Application Load Balancer (ALB).
 
